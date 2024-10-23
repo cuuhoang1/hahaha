@@ -1,8 +1,9 @@
 ****Cấu trúc website ****
-
+****
 1.Trang chủ (index.html)
 	Đường dẫn: /index.html
 	Chứa các liên kết đến các trang khác như Cửa hàng, Về chúng tôi, Dịch vụ, Blog, Liên hệ, Đăng nhập, và Giỏ hàng.
+ ****
 2.Cửa hàng (shop.html)
 	Đường dẫn: /shop.html
 	Chứa danh sách sản phẩm và liên kết đến các trang khác.
