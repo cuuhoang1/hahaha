@@ -866,7 +866,7 @@ body {
   color: #3b5d50;
 }
 
-@media (max-width: 767px) {
+ @media (max-width: 767px) {
   .custom-navbar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -928,5 +928,73 @@ body {
   
   .product-section .product-item .product-thumbnail {
     margin-bottom: 20px;
+  }
+} 
+/* Điều chỉnh breakpoint cho iPad Mini và iPad Air */
+/* Điều chỉnh breakpoint cho iPad Mini và iPad Air */
+@media (min-width: 768px) and (max-width: 1024px), 
+       (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Cài đặt box-sizing cho tất cả phần tử */
+  * {
+    box-sizing: border-box; /* Đảm bảo padding và border được tính vào trong chiều rộng */
+  }
+
+  /* Navbar */
+  .custom-navbar {
+    padding: 1px 0; /* Giảm padding để vừa vặn hơn với màn hình nhỏ */
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 1.2rem; /* Giảm kích thước font cho vừa với màn hình nhỏ */
+  }
+
+  .custom-navbar .custom-navbar-nav li {
+    margin: 0 6px; /* Điều chỉnh margin để các mục trong menu không quá sát nhau */
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 2rem 0; /* Giảm padding trên và dưới để tiết kiệm không gian */
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* Kích thước chữ tiêu đề phù hợp cho tablet */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Điều chỉnh font size cho phù hợp với màn hình nhỏ */
+  }
+
+  .hero .hero-img-wrap img {
+    width: 100%; /* Đảm bảo hình ảnh luôn vừa vặn với kích thước màn hình */
+    height: auto; /* Giữ nguyên tỷ lệ hình ảnh */
+  }
+
+  /* Product Section */
+  .product-section .product-item {
+    width: 100%; /* Đảm bảo mỗi mục sản phẩm chiếm toàn bộ chiều rộng */
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các mục */
+  }
+
+  /* Why Choose Section */
+  .why-choose-section .feature {
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách để không gian giữa các mục vừa vặn */
+  }
+
+  /* We Help Section */
+  .we-help-section .imgs-grid {
+    grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 cột */
+    gap: 15px; /* Tăng khoảng cách giữa các ảnh trong lưới */
+  }
+
+  /* Footer Section */
+  .footer-section .sofa-img {
+    max-width: 150px; /* Giảm kích thước ảnh sofa để phù hợp với màn hình nhỏ */
+  }
+
+  /* Giới hạn tràn viền ngang */
+  body, html {
+    overflow-x: hidden; /* Ngăn chặn tràn viền ngang */
   }
 }
